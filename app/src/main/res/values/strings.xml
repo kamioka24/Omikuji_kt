@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">おみくじ</string>
-    <string name="launch_text">~ 今日の運試し ~</string>
     <string name="back_button">戻る</string>
+    <string name="retry_button">もう一回</string>
+
+    <string name="launch_text">~ 今日の運試し ~</string>
+    <string name="result_title_text">あなたの運勢は・・・</string>
+
+    <string name="daikiti">大吉</string>
+    <string name="tyukiti">中吉</string>
+    <string name="kiti">吉</string>
+    <string name="suekiti">末吉</string>
+    <string name="shokiti">小吉</string>
+    <string name="kyo">凶</string>
+    <string name="daikyo">大凶</string>
+
+    <string name="shake_text">↓↓画像をタップ↓↓</string>
 </resources>
