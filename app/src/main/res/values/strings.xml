@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Omikuji_kt</string>
+    <string name="app_name">おみくじ</string>
+    <string name="launch_text">~ 今日の運試し ~</string>
+    <string name="back_button">戻る</string>
 </resources>
