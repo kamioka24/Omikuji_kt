@@ -4,10 +4,13 @@ import Custom.CustomActivity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuItem
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.RotateAnimation
 import android.view.animation.TranslateAnimation
+import android.widget.Toast
 import kotlinx.android.synthetic.main.android_top.*
 
 class TopActivity : CustomActivity() {
@@ -40,5 +43,15 @@ class TopActivity : CustomActivity() {
                 startActivity(intent)
             }, 2500)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
+        return super.onOptionsItemSelected(item)
     }
 }
