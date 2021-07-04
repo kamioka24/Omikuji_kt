@@ -18,11 +18,11 @@ class ResultActivity : CustomActivity() {
         when (number) {
             in 1..10 -> resultText.setText(R.string.daikiti)
             in 11..20 -> resultText.setText(R.string.tyukiti)
-            in 21..40 -> resultText.setText(R.string.kiti)
-            in 41..60 -> resultText.setText(R.string.suekiti)
-            in 61..70 -> resultText.setText(R.string.shokiti)
-            in 71..90 -> resultText.setText(R.string.kyo)
-            in 91..100 -> resultText.setText(R.string.daikyo)
+            in 21..45 -> resultText.setText(R.string.kiti)
+            in 46..65 -> resultText.setText(R.string.suekiti)
+            in 66..75 -> resultText.setText(R.string.shokiti)
+            in 76..95 -> resultText.setText(R.string.kyo)
+            in 96..100 -> resultText.setText(R.string.daikyo)
         }
 
         Handler().postDelayed(Runnable {
