@@ -6,25 +6,23 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AlphaAnimation
 import kotlinx.android.synthetic.main.activity_result.*
-import kotlin.random.Random
 
 class ResultActivity : CustomActivity() {
 
-    private val rnd = Random
-    private val number = rnd.nextInt(100)
+    private val number = (1..100).random()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
         when (number) {
-            in 0..9 -> resultText.setText(R.string.daikiti)
-            in 10..19 -> resultText.setText(R.string.tyukiti)
-            in 20..39 -> resultText.setText(R.string.kiti)
-            in 40..59 -> resultText.setText(R.string.suekiti)
-            in 60..69 -> resultText.setText(R.string.shokiti)
-            in 70..89 -> resultText.setText(R.string.kyo)
-            in 90..99 -> resultText.setText(R.string.daikyo)
+            in 1..10 -> resultText.setText(R.string.daikiti)
+            in 11..20 -> resultText.setText(R.string.tyukiti)
+            in 21..40 -> resultText.setText(R.string.kiti)
+            in 41..60 -> resultText.setText(R.string.suekiti)
+            in 61..70 -> resultText.setText(R.string.shokiti)
+            in 71..90 -> resultText.setText(R.string.kyo)
+            in 91..100 -> resultText.setText(R.string.daikyo)
         }
 
         Handler().postDelayed(Runnable {
